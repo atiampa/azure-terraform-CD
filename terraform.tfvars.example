@@ -1,0 +1,12 @@
+# terraform.tfvars.example
+# Example variable values - DO NOT commit actual values to source control
+# Copy this file to terraform.tfvars and fill in your actual values
+
+resource_group_name    = "sqlmi-rg"
+location               = "eastus"
+sql_mi_name            = "prod-sqlmi"
+sql_admin_username     = "miadmin"
+sql_admin_password     = "StrongP@ssword1234!" # Use GitHub Secrets instead in production
+sql_mi_sku             = "GP_Gen5"
+sql_mi_vcores          = 4
+sql_mi_storage_size_gb = 32
